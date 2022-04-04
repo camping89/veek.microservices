@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <Import Project="..\..\..\..\common.props" />
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <RootNamespace>Veek.Microservices.AdministrationService</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Volo.Abp.PermissionManagement.HttpApi" Version="5.1.4" />
+        <PackageReference Include="Volo.Abp.FeatureManagement.HttpApi" Version="5.1.4" />
+        <PackageReference Include="Volo.Abp.SettingManagement.HttpApi" Version="5.1.4" />
+        <PackageReference Include="Volo.Abp.AuditLogging.HttpApi" Version="5.1.4" />
+        <PackageReference Include="Volo.Abp.LeptonTheme.Management.HttpApi" Version="5.1.4" />
+        <PackageReference Include="Volo.Abp.LanguageManagement.HttpApi" Version="5.1.4" />
+        <PackageReference Include="Volo.Abp.TextTemplateManagement.HttpApi" Version="5.1.4" />        
+    </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\Veek.Microservices.AdministrationService.Application.Contracts\Veek.Microservices.AdministrationService.Application.Contracts.csproj" />
+    </ItemGroup>
+
+</Project>

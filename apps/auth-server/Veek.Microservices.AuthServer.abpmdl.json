@@ -1,0 +1,13 @@
+{
+  "folders": {
+    "items": {
+      "src": {}
+    }
+  },
+  "packages": {
+    "Veek.Microservices.AuthServer": {
+      "path": "src/Veek.Microservices.AuthServer/Veek.Microservices.AuthServer.abppkg.json",
+      "folder": "src"
+    }
+  }
+}

@@ -1,0 +1,1 @@
+helm upgrade --install microservices-st microservices --namespace microservices --create-namespace

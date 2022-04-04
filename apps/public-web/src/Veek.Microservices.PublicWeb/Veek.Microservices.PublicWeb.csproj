@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <Import Project="..\..\..\..\common.props" />
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Remove="Logs\**" />
+        <Content Remove="Logs\**" />
+        <EmbeddedResource Remove="Logs\**" />
+        <None Remove="Logs\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Content Include="Pages\**\*.js">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content>
+        <Content Include="Pages\**\*.css">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.DataProtection.StackExchangeRedis" Version="6.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Volo.Abp.EventBus.RabbitMQ" Version="5.1.4" />
+        <PackageReference Include="Volo.Abp.Caching.StackExchangeRedis" Version="5.1.4" />
+        <PackageReference Include="Volo.Abp.Http.Client.Web" Version="5.1.4" />
+        <PackageReference Include="Volo.Abp.Http.Client.IdentityModel.Web" Version="5.1.4" />
+        <PackageReference Include="Volo.Abp.AspNetCore.Authentication.OpenIdConnect" Version="5.1.4" />
+        <PackageReference Include="Volo.Abp.AspNetCore.Mvc.Client" Version="5.1.4" />
+        <PackageReference Include="Volo.Abp.AspNetCore.Mvc.UI.Theme.Lepton" Version="5.1.4" />
+        <PackageReference Include="Volo.Abp.Account.Pro.Public.HttpApi.Client" Version="5.1.4" />
+        <ProjectReference Include="..\..\..\..\shared\Veek.Microservices.Shared.Hosting.AspNetCore\Veek.Microservices.Shared.Hosting.AspNetCore.csproj" />
+        <ProjectReference Include="..\..\..\..\shared\Veek.Microservices.Shared.Localization\Veek.Microservices.Shared.Localization.csproj" />
+        <ProjectReference Include="..\..\..\..\services\product\src\Veek.Microservices.ProductService.HttpApi.Client\Veek.Microservices.ProductService.HttpApi.Client.csproj" />
+    </ItemGroup>
+
+</Project>

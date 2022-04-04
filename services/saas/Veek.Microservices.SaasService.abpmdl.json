@@ -1,0 +1,58 @@
+{
+  "folders": {
+    "items": {
+      "src": {},
+      "test": {}
+    }
+  },
+  "packages": {
+    "Veek.Microservices.SaasService.HttpApi": {
+      "path": "src/Veek.Microservices.SaasService.HttpApi/Veek.Microservices.SaasService.HttpApi.abppkg.json",
+      "folder": "src"
+    },
+    "Veek.Microservices.SaasService.Application.Contracts": {
+      "path": "src/Veek.Microservices.SaasService.Application.Contracts/Veek.Microservices.SaasService.Application.Contracts.abppkg.json",
+      "folder": "src"
+    },
+    "Veek.Microservices.SaasService.Application": {
+      "path": "src/Veek.Microservices.SaasService.Application/Veek.Microservices.SaasService.Application.abppkg.json",
+      "folder": "src"
+    },
+    "Veek.Microservices.SaasService.Domain.Shared": {
+      "path": "src/Veek.Microservices.SaasService.Domain.Shared/Veek.Microservices.SaasService.Domain.Shared.abppkg.json",
+      "folder": "src"
+    },
+    "Veek.Microservices.SaasService.Domain": {
+      "path": "src/Veek.Microservices.SaasService.Domain/Veek.Microservices.SaasService.Domain.abppkg.json",
+      "folder": "src"
+    },
+    "Veek.Microservices.SaasService.MongoDB": {
+      "path": "src/Veek.Microservices.SaasService.MongoDB/Veek.Microservices.SaasService.MongoDB.abppkg.json",
+      "folder": "src"
+    },
+    "Veek.Microservices.SaasService.HttpApi.Client": {
+      "path": "src/Veek.Microservices.SaasService.HttpApi.Client/Veek.Microservices.SaasService.HttpApi.Client.abppkg.json",
+      "folder": "src"
+    },
+    "Veek.Microservices.SaasService.HttpApi.Host": {
+      "path": "src/Veek.Microservices.SaasService.HttpApi.Host/Veek.Microservices.SaasService.HttpApi.Host.abppkg.json",
+      "folder": "src"
+    },
+    "Veek.Microservices.SaasService.TestBase": {
+      "path": "test/Veek.Microservices.SaasService.TestBase/Veek.Microservices.SaasService.TestBase.abppkg.json",
+      "folder": "test"
+    },
+    "Veek.Microservices.SaasService.Domain.Tests": {
+      "path": "test/Veek.Microservices.SaasService.Domain.Tests/Veek.Microservices.SaasService.Domain.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "Veek.Microservices.SaasService.MongoDB.Tests": {
+      "path": "test/Veek.Microservices.SaasService.MongoDB.Tests/Veek.Microservices.SaasService.MongoDB.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "Veek.Microservices.MicroserviceName.Application.Tests": {
+      "path": "test/Veek.Microservices.MicroserviceName.Application.Tests/Veek.Microservices.MicroserviceName.Application.Tests.abppkg.json",
+      "folder": "test"
+    }
+  }
+}

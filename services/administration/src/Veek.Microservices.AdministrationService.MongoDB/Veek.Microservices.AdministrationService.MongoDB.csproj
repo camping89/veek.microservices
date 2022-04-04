@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <Import Project="..\..\..\..\common.props" />
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <RootNamespace>Veek.Microservices.AdministrationService</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Volo.Abp.PermissionManagement.MongoDB" Version="5.1.4" />
+        <PackageReference Include="Volo.Abp.FeatureManagement.MongoDB" Version="5.1.4" />
+        <PackageReference Include="Volo.Abp.SettingManagement.MongoDB" Version="5.1.4" />
+        <PackageReference Include="Volo.Abp.AuditLogging.MongoDB" Version="5.1.4" />
+        <PackageReference Include="Volo.Abp.BlobStoring.Database.MongoDB" Version="5.1.4" />
+        <PackageReference Include="Volo.Abp.LanguageManagement.MongoDB" Version="5.1.4" />
+        <PackageReference Include="Volo.Abp.TextTemplateManagement.MongoDB" Version="5.1.4" />
+    </ItemGroup>
+    
+    <ItemGroup>
+        <ProjectReference Include="..\Veek.Microservices.AdministrationService.Domain\Veek.Microservices.AdministrationService.Domain.csproj" />
+    </ItemGroup>
+
+</Project>

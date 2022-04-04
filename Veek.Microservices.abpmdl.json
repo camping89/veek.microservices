@@ -1,0 +1,140 @@
+{
+  "folders": {
+    "items": {
+      "services": {
+        "items": {
+          "administration": {
+            "items": {
+              "src": {}
+            }
+          },
+          "identity": {
+            "items": {
+              "src": {}
+            }
+          },
+          "product": {
+            "items": {
+              "src": {}
+            }
+          },
+          "saas": {
+            "items": {
+              "src": {}
+            }
+          }
+        }
+      },
+      "gateways": {
+        "items": {
+          "internal": {
+            "items": {
+              "src": {}
+            }
+          },
+          "web": {
+            "items": {
+              "src": {}
+            }
+          },
+          "web-public": {
+            "items": {
+              "src": {}
+            }
+          }
+        }
+      },
+      "apps": {
+        "items": {
+          "auth-server": {
+            "items": {
+              "src": {}
+            }
+          },
+          "blazor": {
+            "items": {
+              "src": {}
+            }
+          },
+          "public-web": {
+            "items": {
+              "src": {}
+            }
+          },
+          "web": {
+            "items": {
+              "src": {}
+            }
+          }
+        }
+      },
+      "shared": {}
+    }
+  },
+  "packages": {
+    "Veek.Microservices.AdministrationService.HttpApi.Host": {
+      "path": "services/administration/src/Veek.Microservices.AdministrationService.HttpApi.Host/Veek.Microservices.AdministrationService.HttpApi.Host.abppkg.json",
+      "folder": "services/administration/src"
+    },
+    "Veek.Microservices.IdentityService.HttpApi.Host": {
+      "path": "services/identity/src/Veek.Microservices.IdentityService.HttpApi.Host/Veek.Microservices.IdentityService.HttpApi.Host.abppkg.json",
+      "folder": "services/identity/src"
+    },
+    "Veek.Microservices.ProductService.HttpApi.Host": {
+      "path": "services/product/src/Veek.Microservices.ProductService.HttpApi.Host/Veek.Microservices.ProductService.HttpApi.Host.abppkg.json",
+      "folder": "services/product/src"
+    },
+    "Veek.Microservices.SaasService.HttpApi.Host": {
+      "path": "services/saas/src/Veek.Microservices.SaasService.HttpApi.Host/Veek.Microservices.SaasService.HttpApi.Host.abppkg.json",
+      "folder": "services/saas/src"
+    },
+    "Veek.Microservices.InternalGateway": {
+      "path": "gateways/internal/src/Veek.Microservices.InternalGateway/Veek.Microservices.InternalGateway.abppkg.json",
+      "folder": "gateways/internal/src"
+    },
+    "Veek.Microservices.WebGateway": {
+      "path": "gateways/web/src/Veek.Microservices.WebGateway/Veek.Microservices.WebGateway.abppkg.json",
+      "folder": "gateways/web/src"
+    },
+    "Veek.Microservices.PublicWebGateway": {
+      "path": "gateways/web-public/src/Veek.Microservices.PublicWebGateway/Veek.Microservices.PublicWebGateway.abppkg.json",
+      "folder": "gateways/web-public/src"
+    },
+    "Veek.Microservices.AuthServer": {
+      "path": "apps/auth-server/src/Veek.Microservices.AuthServer/Veek.Microservices.AuthServer.abppkg.json",
+      "folder": "apps/auth-server/src"
+    },
+    "Veek.Microservices.PublicWeb": {
+      "path": "apps/public-web/src/Veek.Microservices.PublicWeb/Veek.Microservices.PublicWeb.abppkg.json",
+      "folder": "apps/public-web/src"
+    },
+    "Veek.Microservices.Web": {
+      "path": "apps/web/src/Veek.Microservices.Web/Veek.Microservices.Web.abppkg.json",
+      "folder": "apps/web/src"
+    },
+    "Veek.Microservices.DbMigrator": {
+      "path": "shared/Veek.Microservices.DbMigrator/Veek.Microservices.DbMigrator.abppkg.json",
+      "folder": "shared"
+    },
+    "Veek.Microservices.Shared.Hosting.AspNetCore": {
+      "path": "shared/Veek.Microservices.Shared.Hosting.AspNetCore/Veek.Microservices.Shared.Hosting.AspNetCore.abppkg.json",
+      "folder": "shared"
+    },
+    "Veek.Microservices.Shared.Hosting.Microservices": {
+      "path": "shared/Veek.Microservices.Shared.Hosting.Microservices/Veek.Microservices.Shared.Hosting.Microservices.abppkg.json",
+      "folder": "shared"
+    },
+    "Veek.Microservices.Shared.Localization": {
+      "path": "shared/Veek.Microservices.Shared.Localization/Veek.Microservices.Shared.Localization.abppkg.json",
+      "folder": "shared"
+    },
+    "Veek.Microservices.Shared.Hosting.Gateways": {
+      "path": "shared/Veek.Microservices.Shared.Hosting.Gateways/Veek.Microservices.Shared.Hosting.Gateways.abppkg.json",
+      "folder": "shared"
+    },
+    "Veek.Microservices.Shared.Hosting": {
+      "path": "shared/Veek.Microservices.Shared.Hosting/Veek.Microservices.Shared.Hosting.abppkg.json",
+      "folder": "shared"
+    }
+  }
+}

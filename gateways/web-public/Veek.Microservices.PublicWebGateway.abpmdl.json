@@ -1,0 +1,13 @@
+{
+  "folders": {
+    "items": {
+      "src": {}
+    }
+  },
+  "packages": {
+    "Veek.Microservices.PublicWebGateway": {
+      "path": "src/Veek.Microservices.PublicWebGateway/Veek.Microservices.PublicWebGateway.abppkg.json",
+      "folder": "src"
+    }
+  }
+}

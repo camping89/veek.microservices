@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>Veek.Microservices.ProductService</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.Ddd.Domain" Version="5.1.4" />
+    <ProjectReference Include="..\Veek.Microservices.ProductService.Domain.Shared\Veek.Microservices.ProductService.Domain.Shared.csproj" />
+  </ItemGroup>
+
+</Project>

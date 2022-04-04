@@ -1,0 +1,37 @@
+config:
+  selfUrl: # https://microservices-st-gateway-public-web
+  globalConfigurationBaseUrl: # http://microservices-st-gateway-public-web
+  corsOrigins: # https://microservices-st-gateway-web,https://microservices-st-gateway-public-web
+  authServer:
+    authority: # http://microservices-st-authserver
+    requireHttpsMetadata: # "false"
+  dotnetEnv: Staging 
+  redisHost: #
+  rabbitmqHost: #
+  elasticsearchUrl: #
+
+reRoutes:
+  identityService:
+    schema: http
+    host: microservices-st-identity
+    port: 80
+  administrationService:
+    schema: http
+    host: microservices-st-administration
+    port: 80
+  productService:
+    schema: http
+    host: microservices-st-product
+    port: 80  
+
+ingress:
+  host: microservices-st-gateway-web-public
+  tlsSecret: microservices-tls
+
+image:
+  repository: veek/microservices-gateway-web-public
+  tag: latest
+  pullPolicy: IfNotPresent
+
+env: {}
+    

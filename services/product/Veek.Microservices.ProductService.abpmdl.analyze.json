@@ -1,0 +1,169 @@
+{
+  "folders": {
+    "src": {},
+    "test": {}
+  },
+  "packages": {
+    "Veek.Microservices.ProductService.Domain.Shared": {
+      "type": "dotnet-project",
+      "path": "src/Veek.Microservices.ProductService.Domain.Shared/Veek.Microservices.ProductService.Domain.Shared.csproj",
+      "folder": "src",
+      "includes": {
+        "lib.domain.shared": {}
+      }      
+    },
+    "Veek.Microservices.ProductService.Domain": {
+      "type": "dotnet-project",
+      "path": "src/Veek.Microservices.ProductService.Domain/Veek.Microservices.ProductService.Domain.csproj",
+      "folder": "src",
+      "includes": {
+        "lib.domain": {}
+      },
+      "contents": {
+        "aggregates": {
+          "Veek.Microservices.ProductService.Products.Product": {
+            "keyType": "Guid",
+            "summary": "Represents a product.",
+            "collectionProperties": {},
+            "navigationProperties": {}
+          } 
+        },
+        "repositoryInterfaces": {
+          "Veek.Microservices.ProductService.Products.IProductRepository": {
+            "entity": {
+              "type": "Veek.Microservices.ProductService.Products.Product",
+              "package": "Veek.Microservices.ProductService.Domain"
+            }
+          }
+        }
+      }
+    },
+    "Veek.Microservices.ProductService.Application.Contracts": {
+      "type": "dotnet-project",
+      "path": "src/Veek.Microservices.ProductService.Application.Contracts/Veek.Microservices.ProductService.Application.Contracts.csproj",
+      "folder": "src",
+      "includes": {
+        "lib.application.contracts": {}
+      }
+    },
+    "Veek.Microservices.ProductService.Application": {
+      "type": "dotnet-project",
+      "path": "src/Veek.Microservices.ProductService.Application/Veek.Microservices.ProductService.Application.csproj",
+      "folder": "src",
+      "includes": {
+        "lib.application": {}
+      },
+      "contents": {
+        "applicationServices": {
+          "Veek.Microservices.ProductService.ProductAppService": {}
+        }
+      }
+    },
+    "Veek.Microservices.ProductService.MongoDB": {
+      "type": "dotnet-project",
+      "path": "src/Veek.Microservices.ProductService.MongoDB/Veek.Microservices.ProductService.MongoDB.csproj",
+      "folder": "src",
+      "includes": {
+        "lib.ef": {}
+      },
+      "contents": {
+        "efDbContexts": {
+          "Veek.Microservices.ProductService.MongoDB.ProductServiceDbContext": {
+            "entities": {
+              "Veek.Microservices.ProductService.Products.Product": {
+                "package": "Veek.Microservices.ProductService.Domain",
+                "dbSetPropertyOnDbContext": "Products",
+                "databaseTable": "Products" 
+              }
+            }
+          }
+        }
+      }
+    },
+    "Veek.Microservices.ProductService.HttpApi": {
+      "type": "dotnet-project",
+      "path": "src/Veek.Microservices.ProductService.HttpApi/Veek.Microservices.ProductService.HttpApi.csproj",
+      "folder": "src",
+      "includes": {
+        "lib.http-api": {}
+      },
+      "contents": {
+        "controllers": {
+          "Veek.Microservices.ProductService.Products.ProductController": {},
+          "Veek.Microservices.ProductService.Products.ProductPublicController": {}
+        }
+      }
+    },
+    "Veek.Microservices.ProductService.HttpApi.Client": {
+      "type": "dotnet-project",
+      "path": "src/Veek.Microservices.ProductService.HttpApi.Client/Veek.Microservices.ProductService.HttpApi.Client.csproj",
+      "folder": "src",
+      "includes": {
+        "lib.http-api-client": {}
+      }
+    },
+    "Veek.Microservices.ProductService.Web": {
+      "type": "dotnet-project",
+      "path": "src/Veek.Microservices.ProductService.Web/Veek.Microservices.ProductService.Web.csproj",
+      "folder": "src",
+      "includes": {
+        "lib.ui.mvc": {}
+      },
+      "contents": {
+        "mvcPages": {
+          "Veek.Microservices.ProductService.Web.Pages.Products.Index.cshtml": {},
+          "Veek.Microservices.ProductService.Web.Pages.Products.CreateModal.cshtml": {},
+          "Veek.Microservices.ProductService.Web.Pages.Products.EditModal.cshtml": {}
+        }
+      }
+    },
+    "Veek.Microservices.ProductService.Blazor": {
+      "type": "dotnet-project",
+      "path": "src/Veek.Microservices.ProductService.Blazor/Veek.Microservices.ProductService.Blazor.csproj",
+      "folder": "src",
+      "includes": {
+        "lib.ui.blazor": {}
+      }
+    },
+    "Veek.Microservices.ProductService.HttpApi.Host": {
+      "type": "dotnet-project",
+      "path": "src/Veek.Microservices.ProductService.HttpApi.Host/Veek.Microservices.ProductService.HttpApi.Host.csproj",
+      "folder": "src",
+      "includes": {
+        "host.http-api": {}
+      }
+    },
+    "Veek.Microservices.ProductService.TestBase": {
+      "type": "dotnet-project",
+      "path": "test/Veek.Microservices.ProductService.TestBase/Veek.Microservices.ProductService.TestBase.csproj",
+      "folder": "test",
+      "includes": {
+        "lib.test": {}
+      }
+    },
+    "Veek.Microservices.ProductService.Domain.Tests": {
+      "type": "dotnet-project",
+      "path": "test/Veek.Microservices.ProductService.Domain.Tests/Veek.Microservices.ProductService.Domain.Tests.csproj",
+      "folder": "test",
+      "includes": {
+        "lib.test": {}
+      }
+    },
+    "Veek.Microservices.ProductService.MongoDB.Tests": {
+      "type": "dotnet-project",
+      "path": "test/Veek.Microservices.ProductService.MongoDB.Tests/Veek.Microservices.ProductService.MongoDB.Tests.csproj",
+      "folder": "test",
+      "includes": {
+        "lib.test": {}
+      }
+    },
+    "Veek.Microservices.ProductService.Application.Tests": {
+      "type": "dotnet-project",
+      "path": "test/Veek.Microservices.ProductService.Application.Tests/Veek.Microservices.ProductService.Application.Tests.csproj",
+      "folder": "test",
+      "includes": {
+        "lib.test": {}
+      }
+    }
+  }
+}

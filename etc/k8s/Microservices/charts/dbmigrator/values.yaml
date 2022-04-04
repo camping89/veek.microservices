@@ -1,0 +1,24 @@
+config:
+  connectionStrings:
+    identityService: #
+    administrationService: #
+    saasService: #
+    productService: #
+  dotnetEnv: Staging
+
+# Seeded clients 
+identityServerClients:
+  angularRootUrl: #
+  webRootUrl: #
+  blazorRootUrl: #
+  blazorServerRootUrl: #
+  publicWebRootUrl: #
+  webGatewayRootUrl: #
+  publicWebGatewayRootUrl: #
+
+image:
+  repository: veek/microservices-db-migrator
+  tag: latest
+  pullPolicy: IfNotPresent
+  
+env: {}  

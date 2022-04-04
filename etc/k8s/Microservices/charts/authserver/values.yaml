@@ -1,0 +1,30 @@
+config:
+  selfUrl: # https://microservices-st-authserver
+  corsOrigins: # https://microservices-st-identity,https://microservices-st-administration,https://microservices-st-saas
+  allowedRedirectUrls: #https://microservices-st-web
+  identityService:
+    connString: # 
+  administrationService:
+    connString: # 
+  saasService:
+    connString: #     
+  authServer:
+    authority: #http://microservices-st-authserver
+    requireHttpsMetadata: #"false"
+  dotnetEnv: # 
+  redisHost: #
+  rabbitmqHost: #
+  elasticsearchUrl: #
+  stringEncryptionDefaultPassPhrase: gsKnGZ041HLL4IM8
+
+ingress:
+  host: # microservices-st-authserver
+  tlsSecret: microservices-tls
+
+image:
+  repository: veek/microservices-app-authserver
+  tag: latest
+  pullPolicy: IfNotPresent
+
+env: {}
+    

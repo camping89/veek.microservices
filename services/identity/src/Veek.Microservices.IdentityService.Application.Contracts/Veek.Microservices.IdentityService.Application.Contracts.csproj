@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <Import Project="..\..\..\..\common.props" />
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <RootNamespace>Veek.Microservices.IdentityService</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Volo.Abp.Identity.Pro.Application.Contracts" Version="5.1.4" />
+        <PackageReference Include="Volo.Abp.IdentityServer.Application.Contracts" Version="5.1.4" />
+        <PackageReference Include="Volo.Abp.Account.Pro.Admin.Application.Contracts" Version="5.1.4" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Veek.Microservices.IdentityService.Domain.Shared\Veek.Microservices.IdentityService.Domain.Shared.csproj" />
+    </ItemGroup>
+
+</Project>

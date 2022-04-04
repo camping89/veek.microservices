@@ -1,0 +1,26 @@
+config:
+  selfUrl: # https://microservices-st-product
+  corsOrigins: #
+  connectionStrings:
+    productService: #
+    administrationService: #
+    saasService: #
+  authServer:
+    authority: # http://microservices-st-authserver
+    requireHttpsMetadata: # "false"
+  dotnetEnv: Staging
+  redisHost: #
+  rabbitmqHost: #
+  elasticsearchUrl: #
+  stringEncryptionDefaultPassPhrase: gsKnGZ041HLL4IM8
+
+ingress:
+  host: microservices-st-product
+  tlsSecret: microservices-tls
+
+image:
+  repository: veek/microservices-service-product
+  tag: latest
+  pullPolicy: IfNotPresent
+
+env: {}      

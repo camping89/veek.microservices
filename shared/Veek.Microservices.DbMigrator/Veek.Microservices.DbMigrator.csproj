@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net6.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Veek.Microservices.Shared.Hosting\Veek.Microservices.Shared.Hosting.csproj" />
+        <ProjectReference Include="..\..\services\administration\src\Veek.Microservices.AdministrationService.Application.Contracts\Veek.Microservices.AdministrationService.Application.Contracts.csproj" />
+        <ProjectReference Include="..\..\services\administration\src\Veek.Microservices.AdministrationService.MongoDB\Veek.Microservices.AdministrationService.MongoDB.csproj" />
+        <ProjectReference Include="..\..\services\identity\src\Veek.Microservices.IdentityService.MongoDB\Veek.Microservices.IdentityService.MongoDB.csproj" />
+        <ProjectReference Include="..\..\services\identity\src\Veek.Microservices.IdentityService.Application.Contracts\Veek.Microservices.IdentityService.Application.Contracts.csproj" />
+        <ProjectReference Include="..\..\services\saas\src\Veek.Microservices.SaasService.MongoDB\Veek.Microservices.SaasService.MongoDB.csproj" />
+        <ProjectReference Include="..\..\services\saas\src\Veek.Microservices.SaasService.Application.Contracts\Veek.Microservices.SaasService.Application.Contracts.csproj" />
+        <ProjectReference Include="..\..\services\product\src\Veek.Microservices.ProductService.Application.Contracts\Veek.Microservices.ProductService.Application.Contracts.csproj" />
+        <ProjectReference Include="..\..\services\product\src\Veek.Microservices.ProductService.MongoDB\Veek.Microservices.ProductService.MongoDB.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Compile Remove="Logs\**" />
+        <Content Remove="Logs\**" />
+        <EmbeddedResource Remove="Logs\**" />
+        <None Remove="Logs\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Remove="appsettings.json" />
+        <Content Include="appsettings.json">
+            <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content>
+        <None Remove="appsettings.secrets.json" />
+    <Content Include="appsettings.secrets.json">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    </ItemGroup>
+
+</Project>

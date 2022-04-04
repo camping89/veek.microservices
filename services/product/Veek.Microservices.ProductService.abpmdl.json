@@ -1,0 +1,62 @@
+{
+  "folders": {
+    "items": {
+      "src": {},
+      "test": {}
+    }
+  },
+  "packages": {
+    "Veek.Microservices.ProductService.Domain.Shared": {
+      "path": "src/Veek.Microservices.ProductService.Domain.Shared/Veek.Microservices.ProductService.Domain.Shared.abppkg.json",
+      "folder": "src"
+    },
+    "Veek.Microservices.ProductService.Domain": {
+      "path": "src/Veek.Microservices.ProductService.Domain/Veek.Microservices.ProductService.Domain.abppkg.json",
+      "folder": "src"
+    },
+    "Veek.Microservices.ProductService.Application.Contracts": {
+      "path": "src/Veek.Microservices.ProductService.Application.Contracts/Veek.Microservices.ProductService.Application.Contracts.abppkg.json",
+      "folder": "src"
+    },
+    "Veek.Microservices.ProductService.Application": {
+      "path": "src/Veek.Microservices.ProductService.Application/Veek.Microservices.ProductService.Application.abppkg.json",
+      "folder": "src"
+    },
+    "Veek.Microservices.ProductService.MongoDB": {
+      "path": "src/Veek.Microservices.ProductService.MongoDB/Veek.Microservices.ProductService.MongoDB.abppkg.json",
+      "folder": "src"
+    },
+    "Veek.Microservices.ProductService.HttpApi": {
+      "path": "src/Veek.Microservices.ProductService.HttpApi/Veek.Microservices.ProductService.HttpApi.abppkg.json",
+      "folder": "src"
+    },
+    "Veek.Microservices.ProductService.HttpApi.Client": {
+      "path": "src/Veek.Microservices.ProductService.HttpApi.Client/Veek.Microservices.ProductService.HttpApi.Client.abppkg.json",
+      "folder": "src"
+    },
+    "Veek.Microservices.ProductService.HttpApi.Host": {
+      "path": "src/Veek.Microservices.ProductService.HttpApi.Host/Veek.Microservices.ProductService.HttpApi.Host.abppkg.json",
+      "folder": "src"
+    },
+    "Veek.Microservices.ProductService.Web": {
+      "path": "src/Veek.Microservices.ProductService.Web/Veek.Microservices.ProductService.Web.abppkg.json",
+      "folder": "src"
+    },
+    "Veek.Microservices.ProductService.Application.Tests": {
+      "path": "test/Veek.Microservices.ProductService.Application.Tests/Veek.Microservices.ProductService.Application.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "Veek.Microservices.ProductService.Domain.Tests": {
+      "path": "test/Veek.Microservices.ProductService.Domain.Tests/Veek.Microservices.ProductService.Domain.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "Veek.Microservices.ProductService.MongoDB.Tests": {
+      "path": "test/Veek.Microservices.ProductService.MongoDB.Tests/Veek.Microservices.ProductService.MongoDB.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "Veek.Microservices.ProductService.TestBase": {
+      "path": "test/Veek.Microservices.ProductService.TestBase/Veek.Microservices.ProductService.TestBase.abppkg.json",
+      "folder": "test"
+    }
+  }
+}

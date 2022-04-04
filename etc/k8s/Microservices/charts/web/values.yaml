@@ -1,0 +1,22 @@
+config:
+  selfUrl: # 
+  gatewayUrl: # 
+  authServer:
+    authority: # http://microservices-st-authserver
+    requireHttpsMetadata: #"false"
+  dotnetEnv: # 
+  redisHost: #
+  rabbitmqHost: #
+  elasticsearchUrl: #
+  stringEncryptionDefaultPassPhrase: gsKnGZ041HLL4IM8
+
+ingress:
+  host: # microservices-st-web
+  tlsSecret: microservices-tls
+
+image:
+  repository: veek/microservices-app-authserver
+  tag: latest
+  pullPolicy: IfNotPresent
+
+env: {}   

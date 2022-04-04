@@ -1,0 +1,33 @@
+config:
+  selfUrl: # https://microservices-st-administration
+  gatewayUrl: # https://microservices-st-gateway-internal/
+  corsOrigins: # https://microservices-st-gateway-web,https://microservices-st-gateway-public-web
+  connectionStrings:
+    administrationService: #
+    saasService: #
+  authServer:
+    authority: # http://microservices-st-authserver
+    requireHttpsMetadata: "false"
+  dotnetEnv: #
+  redisHost: #
+  rabbitmqHost: #
+  elasticsearchUrl: #
+  stringEncryptionDefaultPassPhrase: gsKnGZ041HLL4IM8
+
+synchedCommunication:
+  grantType: # "client_credentials"
+  clientId: # 
+  clientSecret: #
+  authority: # https://microservices-st-authserver
+  scope: # "IdentityService"
+
+ingress:
+  host: # microservices-st-administration
+  tlsSecret: microservices-tls
+
+image:
+  repository: veek/microservices-service-administration
+  tag: latest
+  pullPolicy: IfNotPresent
+
+env: {}

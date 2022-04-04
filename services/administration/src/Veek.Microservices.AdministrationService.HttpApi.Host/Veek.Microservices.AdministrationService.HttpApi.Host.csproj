@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <Import Project="..\..\..\..\common.props" />
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <RootNamespace>Veek.Microservices.AdministrationService</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Volo.Abp.Http.Client.IdentityModel.Web" Version="5.1.4" />
+        <PackageReference Include="Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy" Version="5.1.4" />
+        <PackageReference Include="Volo.Abp.Identity.Pro.HttpApi.Client" Version="5.1.4" />
+        <PackageReference Include="Volo.Abp.Account.Pro.Admin.Application.Contracts" Version="5.1.4" />
+        <PackageReference Include="Volo.Abp.Account.Pro.Public.Application.Contracts" Version="5.1.4" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\..\..\..\shared\Veek.Microservices.Shared.Localization\Veek.Microservices.Shared.Localization.csproj" />
+        <ProjectReference Include="..\..\..\..\shared\Veek.Microservices.Shared.Hosting.Microservices\Veek.Microservices.Shared.Hosting.Microservices.csproj" />
+        <ProjectReference Include="..\..\..\product\src\Veek.Microservices.ProductService.Application.Contracts\Veek.Microservices.ProductService.Application.Contracts.csproj" />
+        <ProjectReference Include="..\..\..\saas\src\Veek.Microservices.SaasService.Application.Contracts\Veek.Microservices.SaasService.Application.Contracts.csproj" />
+        <ProjectReference Include="..\..\..\identity\src\Veek.Microservices.IdentityService.Application.Contracts\Veek.Microservices.IdentityService.Application.Contracts.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Veek.Microservices.AdministrationService.Application\Veek.Microservices.AdministrationService.Application.csproj" />
+        <ProjectReference Include="..\Veek.Microservices.AdministrationService.MongoDB\Veek.Microservices.AdministrationService.MongoDB.csproj" />
+        <ProjectReference Include="..\Veek.Microservices.AdministrationService.HttpApi\Veek.Microservices.AdministrationService.HttpApi.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Compile Remove="Logs\**" />
+        <Content Remove="Logs\**" />
+        <EmbeddedResource Remove="Logs\**" />
+        <None Remove="Logs\**" />
+    </ItemGroup>
+
+</Project>

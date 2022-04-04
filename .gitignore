@@ -348,3 +348,25 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+
+# Rider
+.idea/
+
+
+# Solution specific
+/**/Logs/*
+/.tye/*
+/.dockerignore
+/etc/prometheus/storage/*
+/etc/elasticsearch/data/*
+/etc/grafana/storage/*
+/src/applications/Veek.Microservices.AuthServer/Logs/*
+/src/microservices/identity/Veek.Microservices.IdentityService.HttpApi.Host/Logs/*
+/src/applications/Veek.Microservices.Web/Logs/*
+/src/gateways/Veek.Microservices.WebGateway/Logs/*
+/src/microservices/administration/Veek.Microservices.AdministrationService.Host/Logs/*
+/src/gateways/Veek.Microservices.InternalGateway/Logs/*
+/src/microservices/saas/Veek.Microservices.SaasService/Logs/*
+/src/gateways/Veek.Microservices.PublicWebGateway/Logs/*
+/src/applications/Veek.Microservices.PublicWeb/Logs/*
+/src/microservices/product/Veek.Microservices.ProductService.HttpApi.Host/Logs/*

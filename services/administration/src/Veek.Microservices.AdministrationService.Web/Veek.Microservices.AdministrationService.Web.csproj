@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <RootNamespace>Veek.Microservices.AdministrationService.Web</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Volo.Abp.LeptonTheme.Management.Web" Version="5.1.4" />
+        <PackageReference Include="Volo.Abp.AuditLogging.Web" Version="5.1.4" />
+        <PackageReference Include="Volo.Abp.LanguageManagement.Web" Version="5.1.4" />
+        <PackageReference Include="Volo.Abp.TextTemplateManagement.Web" Version="5.1.4" />
+        <PackageReference Include="Volo.Abp.Account.Pro.Admin.Web" Version="5.1.4" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Veek.Microservices.AdministrationService.Application.Contracts\Veek.Microservices.AdministrationService.Application.Contracts.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.Extensions.FileProviders.Embedded" Version="6.0.0" />
+    </ItemGroup>
+
+</Project>

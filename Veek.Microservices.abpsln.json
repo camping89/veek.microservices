@@ -1,0 +1,40 @@
+{
+  "modules": {
+    "Veek.Microservices": {
+      "path": "Veek.Microservices.abpmdl.json"
+    },
+    "Veek.Microservices.AuthServer": {
+      "path": "apps/auth-server/Veek.Microservices.AuthServer.abpmdl.json"
+    },
+    "Veek.Microservices.Blazor": {
+      "path": "apps/blazor/Veek.Microservices.Blazor.abpmdl.json"
+    },
+    "Veek.Microservices.PublicWeb": {
+      "path": "apps/public-web/Veek.Microservices.PublicWeb.abpmdl.json"
+    },
+    "Veek.Microservices.Web": {
+      "path": "apps/web/Veek.Microservices.Web.abpmdl.json"
+    },
+    "Veek.Microservices.InternalGateway": {
+      "path": "gateways/internal/Veek.Microservices.InternalGateway.abpmdl.json"
+    },
+    "Veek.Microservices.WebGateway": {
+      "path": "gateways/web/Veek.Microservices.WebGateway.abpmdl.json"
+    },
+    "Veek.Microservices.PublicWebGateway": {
+      "path": "gateways/web-public/Veek.Microservices.PublicWebGateway.abpmdl.json"
+    },
+    "Veek.Microservices.AdministrationService": {
+      "path": "services/administration/Veek.Microservices.AdministrationService.abpmdl.json"
+    },
+    "Veek.Microservices.IdentityService": {
+      "path": "services/identity/Veek.Microservices.IdentityService.abpmdl.json"
+    },
+    "Veek.Microservices.ProductService": {
+      "path": "services/product/Veek.Microservices.ProductService.abpmdl.json"
+    },
+    "Veek.Microservices.SaasService": {
+      "path": "services/saas/Veek.Microservices.SaasService.abpmdl.json"
+    }
+  }
+}

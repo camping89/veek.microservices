@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <Import Project="..\..\..\..\common.props" />
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Volo.Saas.Host.Application" Version="5.1.4" />
+        <PackageReference Include="Volo.Saas.Tenant.Application" Version="5.1.4" />        
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Veek.Microservices.SaasService.Domain\Veek.Microservices.SaasService.Domain.csproj" />
+        <ProjectReference Include="..\Veek.Microservices.SaasService.Application.Contracts\Veek.Microservices.SaasService.Application.Contracts.csproj" />
+    </ItemGroup>
+
+</Project>

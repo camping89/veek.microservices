@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Ocelot" Version="17.0.0" />
+        <PackageReference Include="Ocelot.Provider.Polly" Version="17.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Volo.Abp.Swashbuckle" Version="5.1.4" />
+        <PackageReference Include="Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy" Version="5.1.4" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Veek.Microservices.Shared.Hosting.AspNetCore\Veek.Microservices.Shared.Hosting.AspNetCore.csproj" />
+    </ItemGroup>
+
+</Project>

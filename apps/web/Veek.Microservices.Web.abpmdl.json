@@ -1,0 +1,13 @@
+{
+  "folders": {
+    "items": {
+      "src": {}
+    }
+  },
+  "packages": {
+    "Veek.Microservices.Web": {
+      "path": "src/Veek.Microservices.Web/Veek.Microservices.Web.abppkg.json",
+      "folder": "src"
+    }
+  }
+}

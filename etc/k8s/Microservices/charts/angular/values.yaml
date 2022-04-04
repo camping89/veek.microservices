@@ -1,0 +1,17 @@
+config:
+  selfUrl: # 
+  gatewayUrl: # 
+  authServer:
+    authority: # http://microservices-st-authserver
+    requireHttpsMetadata: # "false"
+
+ingress:
+  host: # microservices-st-angular
+  tlsSecret: microservices-tls
+
+image:
+  repository: veek/microservices-app-angular
+  tag: latest
+  pullPolicy: IfNotPresent
+
+env: {}
